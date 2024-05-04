@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "announcement-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/announcement/AnnouncementWebPart.js",
+          "manifest": "./src/webparts/announcement/AnnouncementWebPart.manifest.json"
+        }
+      ]
+    },
+    "adaptive-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/adaptive/AdaptiveWebPart.js",
+          "manifest": "./src/webparts/adaptive/AdaptiveWebPart.manifest.json"
+        }
+      ]
+    },
+    "announcement-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/announcement/AnnouncementAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/announcement/AnnouncementAdaptiveCardExtension.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AnnouncementWebPartStrings": "lib/webparts/announcement/loc/{locale}.js",
+    "AdaptiveWebPartStrings": "lib/webparts/adaptive/loc/{locale}.js",
+    "AnnouncementAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/announcement/loc/{locale}.js"
+  }
+}

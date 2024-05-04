@@ -1,0 +1,77 @@
+{
+  "schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+        "type": "Container",
+        "$data": "${annouceList}",
+        "selectAction": {
+            "type": "Action.view",
+            "data": {
+                "id": "selectAction",
+                "newIndex": "${$index}"
+            }
+        },
+        "separator": true,
+        "items": [
+            {
+                "type": "Container",
+                "items": [
+                    
+            
+            {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "**Date of announcement** : ${dateofannounce}",
+                            "color": "Dark",
+                            "size": "Medium",
+                            "wrap": true,
+                            "maxLines": 2,
+                            "spacing": "None"
+                        }
+                    ]
+                },
+                    {
+                        "type": "Column",
+                        "width": "stretch",
+                        "items": [
+                            {
+                                "type": "TextBlock",
+                                "text": "**Title** : ${Title}",
+                                "color": "Dark",
+                                "size": "Medium",
+                                "wrap": true,
+                                "maxLines": 2,
+                                "spacing": "None"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Column",
+                        "width": "auto",
+                        "items": [
+                            {
+                                "type": "TextBlock",
+                                "text": "**Description** : ${Description}",
+                                "wrap": true,
+                                "horizontalAlignment": "Right",
+                                "size": "Medium"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
+
+}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "nodeVersion": "16.16.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.19.0",
+    "libraryName": "annoucement",
+    "libraryId": "be6923fa-fcf6-4bf5-8923-7d20d708265b",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "annoucement",
+    "solutionShortDescription": "annoucement description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "adaptiveCardExtension",
+    "aceTemplateType": "DataVisualization"
+  }
+}
